@@ -1,0 +1,78 @@
+body{
+  margin: 0;
+  text-align: center;
+  background-image:url(wall.jpg);
+  background-attachment: fixed;
+  background-position:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+
+.header{
+background-color: yellow;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+opacity: 0.9;
+height: 100px;
+z-index: 2;
+}
+h1{
+  margin: 0;
+}
+main{
+  margin-top: 100px;
+}
+
+.counter{
+  font-family:'Parisienne', cursive;
+  color: #F05B27;
+  text-shadow: 2px 2px black;
+  font-size: 3rem;
+  line-height: 33%;
+}
+
+#wall{
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bottle{
+  width: 10%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: shrink;
+  width: 100%;
+}
+
+img{
+  width: 100%;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.bottle:hover{
+transform: scale(1.1);
+cursor: pointer;
+}
+
+.bottle.drank{
+  visibility: hidden;
+  opactiy: 0;
+}
+
+@media only screen and (max-width: 610px){
+  .header{
+    font-size: 0.65rem;
+  }
+  .counter{
+    font-size: 2rem;
+  }
+}
